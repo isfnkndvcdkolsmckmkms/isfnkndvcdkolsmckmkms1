@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Vape Products and Accessories">
+    <title>Vape Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>IPuff VapeShop</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-text">
+            <h2>Your One Stop Vape Shop</h2>
+            <p>Discover premium vape products for all your needs</p>
+            <a href="#products" class="cta">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product" data-id="DenKat x Geek Bar Pro 15k Disposable Vape" data-name="DenKat x Geek Bar Pro 15k Disposable Vape" data-price="500.00">
+                <img src="products/DenKat x Geek Bar Pro 15k Disposable Vape.jpg" alt="Product ">
+                <h3>DenKat x Geek Bar Pro 15k Disposable Vape</h3>
+                <h4>Product Information</h4>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 15,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱500.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(1)">Buy Now</button>
+            </div>
+                <!-- Product 2 -->
+            <div class="product" data-id="Boss x Nevoks Bar 19K Disposable Vape" data-name="Boss x Nevoks Bar 19K Disposable Vape" data-price="450.00">
+                <img src="products/Boss x Nevoks Bar 19K Disposable Vape.jpg" alt="Product ">
+                <h3>Boss x Nevoks Bar 19K Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 19,000 Puffs</p>
+        <p><strong>Battery:</strong> 600mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(2)">Buy Now</button>
+            </div>
+              <!-- Product 3 -->
+            <div class="product" data-id="Geek Bar Aegis 15000 Puffs" data-name="Geek Bar Aegis 15000 Puffs" data-price="450.00">
+                <img src="products/Geek Bar Aegis 15000 Puffs.jpg" alt="Product ">
+                <h3>Geek Bar Aegis 15000 Puffs</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 15,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(3)">Buy Now</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product" data-id="Nerdz X Aspire Exso 15000 Puffs Disposable Vape" data-name="Nerdz X Aspire Exso 15000 Puffs Disposable Vape" data-price="500.00">
+                <img src="products/Nerdz X Aspire Exso 15000 Puffs Disposable Vape.png" alt="Product ">
+                <h3>Nerdz X Aspire Exso 15000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 2.5%</p>
+        <p><strong>Puffs:</strong> 15,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱500.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(4)">Buy Now</button>
+            </div>
+             <!-- Product 5 -->
+              <div class="product" data-id="Shift Gripbar Freezy 12000 Disposable Vape" data-name="Shift Gripbar Freezy 12000 Disposable Vape" data-price="450.00">
+                <img src="products/Shift Gripbar Freezy 12000 Disposable Vape.png" alt="Product ">
+                <h3>Shift Gripbar Freezy 12000 Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 12,000 Puffs</p>
+        <p><strong>Battery:</strong> 600mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(5)">Buy Now</button>
+            </div>
+              <!-- Product 6 -->
+              <div class="product" data-id="Top Fog 12000 Puffs Aladdin Disposable Vape" data-name="Top Fog 12000 Puffs Aladdin Disposable Vape" data-price="240.00">
+                <img src="products/Top Fog 12000 Puffs Aladdin Disposable Vape.png" alt="Product ">
+                <h3>Top Fog 12000 Puffs Aladdin Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 12,000 Puffs</p>
+        <p><strong>Battery:</strong> 600mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 20ml</p>
+                <p>₱240.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(6)">Buy Now</button>
+            </div>
+              <!-- Product 7 -->
+              <div class="product" data-id="VIPO VB CUBE 12000 Disposable Vape" data-name="VIPO VB CUBE 12000 Disposable Vape" data-price="160.00">
+                <img src="products/VIPO VB CUBE 12000 Disposable Vape.png" alt="Product ">
+                <h3>VIPO VB CUBE 12000 Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 12,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 20ml</p>
+                <p>₱160.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(7)">Buy Now</button>
+            </div>
+               <!-- Product 8 -->
+               <div class="product" data-id="Denkat X Flava Nimmbox 10k Disposable Vape" data-name="Denkat X Flava Nimmbox 10k Disposable Vape" data-price="500.00">
+                <img src="products/Denkat X Flava Nimmbox 10k Disposable Vape.png" alt="Product ">
+                <h3>Denkat X Flava Nimmbox 10k Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 600mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱500.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(8)">Buy Now</button>
+            </div>
+           <!-- Product 9 -->
+               <div class="product" data-id="FLAVA GEEKBAR 10000 Puffs Disposable Vape" data-name="FLAVA GEEKBAR 10000 Puffs Disposable Vape" data-price="550.00">
+                <img src="products/FLAVA GEEKBAR 10000 Puffs Disposable Vape.jpg" alt="Product ">
+                <h3>FLAVA GEEKBAR 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱550.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(9)">Buy Now</button>
+            </div>
+          <!-- Product 10 -->
+               <div class="product" data-id="Flava Hyper Bar Xtre 10000 Puffs Disposable Vape" data-name="Flava Hyper Bar Xtre 10000 Puffs Disposable Vape" data-price="450.00">
+                <img src="products/Flava Hyper Bar Xtre 10000 Puffs Disposable Vape.jpg" alt="Product ">
+                <h3>Flava Hyper Bar Xtre 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(10)">Buy Now</button>
+            </div>
+             <!-- Product 11 -->
+             <div class="product" data-id="Flava Romio Pilot 10000 Puffs Disposable Vape" data-name="Flava Romio Pilot 10000 Puffs Disposable Vape" data-price="500.00">
+                <img src="products/Flava Romio Pilot 10000 Puffs Disposable Vape.png" alt="Product ">
+                <h3>Flava Romio Pilot 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 550mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 15ml</p>
+                <p>₱500.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(11)">Buy Now</button>
+            </div>
+               <!-- Product 12 -->
+               <div class="product" data-id="Geekbar Mcu 10000 Disposable Vape" data-name="Geekbar Mcu 10000 Disposable Vape" data-price="400.00">
+                <img src="products/Geekbar Mcu 10000 Disposable Vape.jpg" alt="Product ">
+                <h3>Geekbar Mcu 10000 Disposable Vape          </h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 550mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱400.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(12)">Buy Now</button>
+            </div>
+                 <!-- Product 13 -->
+               <div class="product" data-id="Instabar Max 10000 Puffs Disposable Vape" data-name="Instabar Max 10000 Puffs Disposable Vape" data-price="450.00">
+                <img src="products/Instabar Max 10000 Puffs Disposable Vape.jpg" alt="Product ">
+                <h3>Instabar Max 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(13)">Buy Now</button>
+            </div>
+                <!-- Product 14 -->
+               <div class="product" data-id="Lana Airship Disposable Vape 10000 Puffs" data-name="Lana Airship Disposable Vape 10000 Puffs" data-price="450.00">
+                <img src="products/Lana Airship Disposable Vape 10000 Puffs.jpg" alt="Product ">
+                <h3>Lana Airship Disposable Vape 10000 Puffs</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(14)">Buy Now</button>
+            </div>
+               <!-- Product 15 -->
+               <div class="product" data-id="Mosmo Zipmo 10000 Puffs Disposable Vape" data-name="Mosmo Zipmo 10000 Puffs Disposable Vape" data-price="400.00">
+                <img src="products/Mosmo Zipmo 10000 Puffs Disposable Vape.png" alt="Product ">
+                <h3>Mosmo Zipmo 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱400.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(15)">Buy Now</button>
+            </div>
+              <!-- Product 16 -->
+              <div class="product" data-id="Nasty Bar DX10i 10000 Puffs Disposable Vape" data-name="Nasty Bar DX10i 10000 Puffs Disposable Vape" data-price="500.00">
+                <img src="products/Nasty Bar DX10i 10000 Puffs Disposable Vape.png" alt="Product ">
+                <h3>Nasty Bar DX10i 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱500.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(16)">Buy Now</button>
+            </div>
+                   <!-- Product 17 -->
+              <div class="product" data-id="Shift Level Bar 10000 Puffs Disposable Vape" data-name="Shift Level Bar 10000 Puffs Disposable Vape" data-price="450.00">
+                <img src="products/Shift Level Bar 10000 Puffs Disposable Vape.png" alt="Product ">
+                <h3>Shift Level Bar 10000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(17)">Buy Now</button>
+            </div>
+                       <!-- Product 18 -->
+              <div class="product" data-id="WERTI GTR 10000 Puffs Disposable Vape Original" data-name="WERTI GTR 10000 Puffs Disposable Vape Original" data-price="400.00">
+                <img src="products/WERTI GTR 10000 Puffs Disposable Vape Original.jpg" alt="Product ">
+                <h3>WERTI GTR 10000 Puffs Disposable Vape Original</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 10,000 Puffs</p>
+        <p><strong>Battery:</strong> 650mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱400.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(18)">Buy Now</button>
+            </div>
+                         <!-- Product 19 -->
+              <div class="product" data-id="Flava Mosmo 8000 Puffs Disposable Vape" data-name="Flava Mosmo 8000 Puffs Disposable Vape" data-price="260.00">
+                <img src="products/Flava Mosmo 8000 Puffs Disposable Vape.jpg" alt="Product ">
+                <h3>Flava Mosmo 8000 Puffs Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 8,000 Puffs</p>
+        <p><strong>Battery:</strong> 700mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱260.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(19)">Buy Now</button>
+            </div>
+                             <!-- Product 20 -->
+              <div class="product" data-id="Flava Oxbar Pro 9500 Disposable Vape" data-name="Flava Oxbar Pro 9500 Disposable Vape" data-price="350.00">
+                <img src="products/Flava Oxbar Pro 9500 Disposable Vape.jpg" alt="Product ">
+                <h3>Flava Oxbar Pro 9500 Disposable Vape</h3>
+                <h2>Product Information</h2>
+        <p><strong>Nicotine:</strong> 3%</p>
+        <p><strong>Puffs:</strong> 9,500 Puffs</p>
+        <p><strong>Battery:</strong> 750mAh</p>
+        <p><strong>E-liquid Capacity:</strong> 10ml</p>
+                <p>₱350.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now-button" onclick="buyNow(20)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>No items in the cart yet.</p>
+        </div>
+        <div id="cart-total">
+            <h3>Total: ₱<span id="cart-total-amount">0.00</span></h3>
+        </div>
+        <!-- Buy Now button in the cart -->
+        <button id="checkout-button" class="buy-now-button" onclick="checkout()">Buy Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VapeShop. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="cart.js"></script>
+</body>
+</html>
